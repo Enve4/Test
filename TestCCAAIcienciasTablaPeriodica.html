@@ -1,0 +1,51 @@
+<!DOCTYPE html5>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Test Ciencias Aplicadas I</title>
+</head>
+<body>
+    <h1>Test de Ciencias Aplicadas I</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>Test Ciencias aplicadas I.</p>
+        <p>Tabla periódica de los elemtnos</p>
+        <img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Periodic_table_large_2016-es.png/1920px-Periodic_table_large_2016-es.png" alt="">
+        <p>Selecciona la opción a la que hace referencia cada imagen</p>
+        <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/ad.svg" alt="" id="imgObjeto">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>PUNTOS: <span id="puntos">3</span></h2>
+        <h3>CORRECTAS: <span id="numCorrectas">3</span></h3>
+        <h3>INCORRECTAS: <span id="numIncorrectas">2</span></h3>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+
+    
+    <script src="jsTablaPeriodica.js"></script>
+</body>
+</html>
